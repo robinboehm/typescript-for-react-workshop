@@ -2,11 +2,11 @@
 import './style.css';
 
 
-function add(a ,b) {
+function add(a : number ,b : number): number {
   return a + b
 }
 
-let b = "5";
+let b : number = 5;
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
@@ -16,9 +16,9 @@ appDiv.innerHTML = `
 <ul>
   <li>${add(1,2)}</li>
   <li>${add(1,100)}</li>
-  <li>${add(1,"100")}</li>
-  <li>${add(3,{value:"5"})}</li>
-  <li>${add(b,{value:"10"}).toUpperCase()}</li>
+  <li>${add(1,100)}</li>
+  <li>${add(3,5)}</li>
+  <li>${add(b,10)}</li>
 </ul>
 <h3>Expected Result</h3>
 <ul>
